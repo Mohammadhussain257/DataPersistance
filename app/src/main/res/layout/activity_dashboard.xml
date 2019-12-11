@@ -3,23 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".DashboardActivity">
 
-    <EditText
-        android:id="@+id/etWord"
-        android:hint="Enter Word"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/etMeaning"
-        android:hint="Meaning"
+    <Button
+        android:id="@+id/btnAddWord"
+        android:text="Add Word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/btnSave"
-        android:text="Save"
+        android:id="@+id/btnShowWords"
+        android:text="Show Words"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
 </LinearLayout>
