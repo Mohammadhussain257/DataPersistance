@@ -15,21 +15,21 @@ public class DashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        btnAddWord=findViewById(R.id.btnAddWord);
-        btnShowWords=findViewById(R.id.btnShowWords);
+        this.btnAddWord=findViewById(R.id.btnAddWord);
+        this.btnShowWords=findViewById(R.id.btnShowWords);
 
         btnAddWord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+               Intent intent=new Intent(DashboardActivity.this,MainActivity.class);
                startActivity(intent);
             }
         });
 
-        btnAddWord.setOnClickListener(new View.OnClickListener() {
+        btnShowWords.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),ListActivity.class);
+                Intent intent=new Intent(DashboardActivity.this,ListActivity.class);
                 startActivity(intent);
             }
         });
